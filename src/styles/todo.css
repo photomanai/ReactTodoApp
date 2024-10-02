@@ -1,0 +1,66 @@
+.todo-create {
+  background-color: #3b3b7a;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.todo-create input,
+button {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 0;
+  outline: none;
+  transform: 0.3s;
+}
+
+.todo-create button:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.todo-create button:active {
+  background-color: #d4d4d4;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b3b7a50;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  margin: 10px;
+  align-items: center;
+}
+
+.todo-row p {
+  font-size: 16px;
+  color: #ffffff;
+  width: 85%;
+}
+
+.icon-c {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.edit-icon,
+.remove-icon {
+  cursor: pointer;
+}
+
+.edit-icon:hover,
+.remove-icon:hover {
+  color: #e3e3e3;
+}
+
+.edit-icon:active,
+.remove-icon:active {
+  color: #d4d4d4;
+}
