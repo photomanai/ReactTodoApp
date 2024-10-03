@@ -2,10 +2,10 @@ import React from "react";
 import Todo from "./Todo";
 import "../styles/todo.css";
 
-function TodoList() {
+function TodoList({ todos }) {
   return (
-    <div>
-      <Todo />
+    <div className="todos">
+      {todos && todos.map((todo) => <Todo todo={todo} key={todo.id} />)}
     </div>
   );
 }

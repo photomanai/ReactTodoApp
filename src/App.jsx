@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <div style={{ height: "90vh" }}>
         <TodoCreate onCreateTodo={createTodo} />
-        <TodoList />
+        <TodoList todos={todos} />
       </div>
     </div>
   );

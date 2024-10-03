@@ -2,10 +2,11 @@ import React from "react";
 import { MdOutlineBookmarkRemove, MdEdit } from "react-icons/md";
 import "../styles/todo.css";
 
-function Todo() {
+function Todo({ todo }) {
+  const { id, content } = todo;
   return (
     <div className="todo-row">
-      <p>Firs ToDo </p>
+      <p>{content} </p>
       <div className="icon-c">
         <MdEdit className="edit-icon" />
         <MdOutlineBookmarkRemove className="remove-icon" />
