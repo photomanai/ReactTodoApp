@@ -10,13 +10,17 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
+  const removeTodo = (todoId) => {
+    setTodos([...todos.filter((todo) => todo.id !== todoId)]);
+  };
+
   console.log(todos);
 
   return (
     <div className="App">
       <div style={{ height: "90vh" }}>
         <TodoCreate onCreateTodo={createTodo} />
-        <TodoList todos={todos} />
+        <TodoList todos={todos} onRemoveTodo={removeTodo} />
       </div>
     </div>
   );
